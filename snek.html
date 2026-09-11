@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake Game</title>
+  <link rel="stylesheet" href="snek.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>Snake</h1>
+
+    <div class="score-board">
+      <div class="score">Score: <span id="score">0</span></div>
+      <div class="high-score">Best: <span id="highScore">0</span></div>
+    </div>
+
+    <div class="canvas-wrapper">
+      <canvas id="gameCanvas" width="400" height="400"></canvas>
+      <div id="overlay" class="overlay">
+        <p id="overlayText">Press Space or Tap to Start</p>
+      </div>
+    </div>
+
+    <div class="controls-hint">
+      Use Arrow Keys / WASD to move &nbsp;•&nbsp; Space to pause
+    </div>
+
+    <div class="touch-controls">
+      <button id="btnUp" class="dir-btn up">▲</button>
+      <div class="mid-row">
+        <button id="btnLeft" class="dir-btn left">◀</button>
+        <button id="btnDown" class="dir-btn down">▼</button>
+        <button id="btnRight" class="dir-btn right">▶</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="snek.js"></script>
+</body>
+</html>
